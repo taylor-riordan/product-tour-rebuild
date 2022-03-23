@@ -1,0 +1,227 @@
+@font-face{font-family:Gotham;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-Medium.eot);src:local('Gotham'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Medium.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Medium.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Medium.svg#webfont) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Gotham;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-Bold.eot);src:local('Gotham-Bold'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Bold.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Bold.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Bold.svg#webfont) format('svg');font-weight:700;font-style:normal}@font-face{font-family:Gotham-Bold;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-Bold.eot);src:local('Gotham-Bold'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Bold.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Bold.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Bold.svg#webfont) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Gotham-Italic;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-LightItalic.eot);src:local('Gotham-Italic'),url(https://cdn.nwea.org/fonts/gotham/Gotham-LightItalic.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-LightItalic.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-LightItalic.svg#webfont) format('svg');font-weight:300;font-style:normal}@font-face{font-family:Gotham-Italic;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-BookItalic.eot);src:local('Gotham-Italic'),url(https://cdn.nwea.org/fonts/gotham/Gotham-BookItalic.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-BookItalic.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-BookItalic.svg#webfont) format('svg');font-weight:500;font-style:normal}@font-face{font-family:Gotham-Italic;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-MediumItalic.eot);src:local('Gotham-Italic'),url(https://cdn.nwea.org/fonts/gotham/Gotham-MediumItalic.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-MediumItalic.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-MediumItalic.svg#webfont) format('svg');font-weight:700;font-style:normal}@font-face{font-family:Gotham-Italic;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-BoldItalic.eot);src:local('Gotham-Italic'),url(https://cdn.nwea.org/fonts/gotham/Gotham-BoldItalic.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-BoldItalic.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-BoldItalic.svg#webfont) format('svg');font-weight:900;font-style:normal}@font-face{font-family:Gotham-Light;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-Light.eot);src:local('Gotham-Light'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Light.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Light.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Light.svg#webfont) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Gotham-Book;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-Book.eot);src:local('Gotham-Book'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Book.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Book.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Book.svg#webfont) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Gotham-Black;src:url(https://cdn.nwea.org/fonts/gotham/Gotham-Black.eot);src:local('Gotham-Black'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Black.woff) format('woff'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Black.ttf) format('truetype'),url(https://cdn.nwea.org/fonts/gotham/Gotham-Black.svg#webfont) format('svg');font-weight:400;font-style:normal}
+
+// Add variables here
+
+$nwea-yellow: #FFC20E;
+$nwea-graphite: #454243;
+$nwea-font-graphite: #414142;
+
+// Add mixins here
+
+@mixin primary-font {
+    color: $nwea-graphite;
+    font-family: gotham;
+    font-size: 21px;
+}
+
+@mixin secondary-font {
+    color: $nwea-graphite;
+    font-family: gotham-book;
+    font-size: 16px;
+}
+
+// 1. Landing page ("lp" for classes and id's)
+#lp-header-logo {
+    padding: 20px 0px 20px;
+    h1 {
+        text-align: center; 
+        @include secondary-font;
+        font-size: 26px !important;
+    }
+    img {
+        max-width: 90vw;
+        width: 500px;
+        height: auto;
+        display: block;
+        margin: auto;
+        padding-top: 15px;
+    }
+}
+
+//  1A. Landing page content
+#lp-bg-container {
+    width: 100vw;
+    position: relative;
+}
+
+#lp-bg-video-container {
+    width: 100vw;
+    height: 80vh;
+    min-height: 500px;
+    position: relative;
+        video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            z-index: 0;
+          
+        }
+}
+
+#lp-bg-container-copy-container {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 3%; 
+    display: block;
+    margin: auto;
+    #lp-bg-container-copy {
+        background-color: rgba(143,196,63,0.85);
+        width: 535px;
+        height: auto;
+        display: block;
+        margin: auto;
+        padding: 15px 20px 15px;
+            h1 {
+                text-align: center;
+                font-size: 1.6rem;
+                color: #ffffff;
+                font-family: Gotham-Bold !important;
+            }
+    }
+}
+
+#lp-inner-content-wrapper {
+    position: relative;
+    height: 250px;
+        .lp-inner-content {
+            margin-top: -200px;
+            display: block;
+            position: relative;
+                .lp-cta {
+                    background-color: #fff;
+                    border: 1px solid #f5f6f7;
+                    padding: 45px 15px 15px;
+                    box-shadow: 3px 4px 5px 0 rgb(65 65 66 / 10%);
+                    // width: 350px;
+                    // height: 250px;
+                    position: relative;
+                    text-align: center;
+                }
+                .div-cta{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                  }
+                }
+                h2 {
+                    color: $nwea-font-graphite;
+                    font-size: 1.4rem;
+                    font-family: Gotham-Bold;
+                    margin-bottom: 0px !important;
+                    
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    color: $nwea-font-graphite;
+                    font-family: Gotham-book !important;  
+                    padding-top: 15px;
+                }
+                div {
+                    padding-top: 40px;
+                    img {
+                        width: 50px;
+                        height: auto;
+                    }
+                }
+}
+
+// Landing page responsive
+
+@media only screen and (max-width: 575px) {
+    .lp-inner-content {
+        margin-top: 0px;
+        display: block;
+        position: relative;
+    }
+}
+
+// 1B. Landing page footer
+footer {
+    background-color: $nwea-graphite;
+}
+
+#lp-footer {
+    color: $nwea-graphite;
+    padding: 30px 0px 30px;
+    img {
+        display: block;
+        margin: auto;
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+// 2. Informing leaders page ("il" for classes and id's)
+
+// 2A. Informing leaders header
+
+#il-header-logo {
+    background-color: $nwea-graphite;
+    color: $nwea-graphite;
+    padding: 30px 0px 30px;
+    img {
+        display: block;
+        margin: auto;
+        width: 100px;
+        height: auto;
+    }
+}
+
+.nav-item {
+    a {
+        padding: 1.5rem 1rem 1.5rem !important;
+        text-transform: uppercase;
+        display: block;
+        text-decoration: none;
+        color: $nwea-font-graphite;
+        font-family: gotham-book;
+        .nav-link {
+            padding: 3rem;
+        }
+    }
+    a:hover {
+        font-family: gotham-bold;
+        color: $nwea-font-graphite;
+    }
+    img {
+        width: 30px;
+        height: auto;
+        display: inline;
+        margin-top: -4px;
+    }
+}
+
+.navbar-brand {
+    img { 
+        padding: 1.5rem 1rem 1.5rem !important;
+        width: 250px;
+        height: auto;
+    }
+}
+
+// Carousel
+
+.carousel-content {
+    position: absolute;
+    bottom: 40%;
+    z-index: 20;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    h2 {
+        font-size: 1.5rem;
+        font-family: gotham-bold;
+    }
+    p {
+        font-family: gotham-book;
+        font-size: 1.2rem;
+        padding-top: 15px;
+    }
+  }
