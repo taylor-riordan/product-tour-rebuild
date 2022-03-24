@@ -4,7 +4,10 @@
 
 $nwea-yellow: #FFC20E;
 $nwea-graphite: #454243;
+$nwea-green: #C7E19E;
 $nwea-font-graphite: #414142;
+$section-heading-size: 1.4rem;
+$section-body-size: 1.2rem;
 
 // Add mixins here
 
@@ -84,8 +87,11 @@ $nwea-font-graphite: #414142;
 
 #lp-inner-content-wrapper {
     position: relative;
+    #lp-inner-content-container {
+        margin-top: -16rem;
+        padding-bottom: 5rem;
+    }
         .lp-inner-content {
-            margin-top: -200px;
             display: block;
             position: relative;
                 .lp-cta {
@@ -93,8 +99,6 @@ $nwea-font-graphite: #414142;
                     border: 1px solid #f5f6f7;
                     padding: 45px 15px 15px;
                     box-shadow: 3px 4px 5px 0 rgb(65 65 66 / 10%);
-                    // width: 350px;
-                    // height: 250px;
                     position: relative;
                     text-align: center;
                 }
@@ -109,7 +113,7 @@ $nwea-font-graphite: #414142;
                 }
                 h2 {
                     color: $nwea-font-graphite;
-                    font-size: 1.4rem;
+                    font-size: $section-heading-size;
                     font-family: Gotham-Bold;
                     margin-bottom: 0px !important;
                     
@@ -133,11 +137,16 @@ $nwea-font-graphite: #414142;
 // Landing page responsive
 
 @media only screen and (max-width: 575px) {
-    .lp-inner-content {
-        margin-top: 0px;
-        display: block;
-        position: relative;
+    #lp-bg-video-container {
+        height: 40vh !important;
     }
+   
+    #lp-bg-container-copy-container{
+        padding-top: 20% !important;
+    }
+        #lp-bg-container-copy {
+            width: 95% !important;
+        }
 }
 
 // 1B. Landing page footer
@@ -205,15 +214,51 @@ footer {
     }
 }
 
+
+// Content page header
+
+.cp-two-column {
+    height: 70vh;
+    .cp-two-column-copy {
+        padding-top: 20%;
+        margin: auto;
+        width: 70%;
+        .cp-two-column-copy-bg {
+            background-color: #000000;
+            opacity: 0.6;
+            padding: 30px;
+        }
+        h2 {
+            font-size: $section-heading-size;
+            font-family: gotham-book;
+            color: #ffffff;
+        }
+        p {
+            font-size: $section-body-size;
+            font-family: gotham-book;
+            color: #ffffff;
+        }
+        .cp-two-column-line {
+            border-top: 5px solid #90c540;
+            width: 60px;
+        }
+    }
+}
+
 // Carousel
 
-.carousel-content {
+
+.carousel-content-container {
     position: absolute;
     bottom: 40%;
     z-index: 20;
-    text-align: center;
     width: 100%;
+}
+.carousel-content {
     color: #ffffff;
+    text-align: center;
+    width: 60%;
+    margin: auto;
     h2 {
         font-size: 1.5rem;
         font-family: gotham-bold;
