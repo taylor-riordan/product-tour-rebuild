@@ -6,7 +6,8 @@ $nwea-yellow: #FFC20E;
 $nwea-graphite: #454243;
 $nwea-green: #C7E19E;
 $nwea-font-graphite: #414142;
-$section-heading-size: 1.4rem;
+$section-heading-size: 1.6rem;
+$section-subheading-size: 1.4rem;
 $section-body-size: 1.2rem;
 
 // Add mixins here
@@ -149,7 +150,7 @@ $section-body-size: 1.2rem;
         }
 }
 
-// 1B. Landing page footer
+// Footers
 footer {
     background-color: $nwea-graphite;
 }
@@ -160,10 +161,31 @@ footer {
     img {
         display: block;
         margin: auto;
-        width: 100px;
+        width: 6.25rem;
         height: auto;
     }
 }
+
+#cp-footer {
+    color: $nwea-graphite;
+    padding: 30px 0px 0px;
+    img {
+        display: block;
+        margin: auto;
+        width: 6.25rem;
+        height: auto;
+    }
+    .cp-footer-copy {
+        p {
+            font-size: $section-heading-size;
+            color: #ffffff;
+            font-family: gotham-bold;
+            text-align: right;
+        }
+    } 
+}
+
+
 
 
 // 2. Informing leaders page ("il" for classes and id's)
@@ -177,7 +199,7 @@ footer {
     img {
         display: block;
         margin: auto;
-        width: 100px;
+        width: 6.25rem;
         height: auto;
     }
 }
@@ -215,53 +237,75 @@ footer {
 }
 
 
-// Content page header
+// 1. Content page hero
 
-.cp-two-column {
-    height: 70vh;
-    .cp-two-column-copy {
-        padding-top: 20%;
-        margin: auto;
-        width: 70%;
-        .cp-two-column-copy-bg {
-            background-color: #000000;
-            opacity: 0.6;
+#informing-leaders-hero {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg1_01/01_1920x525_1.jpg");
+}
+#supporting-teachers-hero{
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg2_01/02_1920x525_1.jpg");
+}
+#engaging-students-hero {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg3_01/03_1920x525_1.jpg");
+
+}
+
+
+.cp-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container{
+        padding: 75px 0px 75px;
+    }
+    .cp-hero-copy {
+        width: 75%;
+        .cp-hero-copy-bg {
+            background-color: rgba(0,0,0,0.7);
             padding: 30px;
-        }
-        h2 {
-            font-size: $section-heading-size;
-            font-family: gotham-book;
-            color: #ffffff;
-        }
-        p {
-            font-size: $section-body-size;
-            font-family: gotham-book;
-            color: #ffffff;
-        }
-        .cp-two-column-line {
-            border-top: 5px solid #90c540;
-            width: 60px;
+            div {
+                h2 {
+                    font-size: $section-heading-size;
+                    font-family: gotham-book;
+                    color: #ffffff;
+                }
+                p {
+                    font-size: $section-body-size;
+                    font-family: gotham-book;
+                    color: #ffffff;
+                }
+                .cp-hero-line {
+                    border-top: 5px solid #90c540;
+                    width: 60px;
+                }
+            }
         }
     }
 }
 
-// Carousel
+@media only screen and (max-width: 575px) {
+    .cp-two-column-copy{
+        margin: auto;
+    }
+}
 
+// 2. Carousel
 
 .carousel-content-container {
     position: absolute;
-    bottom: 40%;
+    bottom: 50%;
     z-index: 20;
     width: 100%;
 }
 .carousel-content {
-    color: #ffffff;
+    color: $nwea-font-graphite;
     text-align: center;
     width: 60%;
     margin: auto;
     h2 {
         font-size: 1.5rem;
         font-family: gotham-bold;
+
     }
     p {
         font-family: gotham-book;
@@ -269,3 +313,238 @@ footer {
         padding-top: 15px;
     }
   }
+
+// 3. Full-width centered content
+
+#reach-more-students {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg1_01/01_1920x525_3.jpg");
+}
+#commited-to-your-success {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg1_01/01_1920x525_5.jpg");
+
+}
+#one-size-doesnt-fit-all {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg2_01/02_1920x525_3.jpg");
+
+}
+#power-up-personalization {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg2_01/02_1920x620_4.jpg");
+}
+#better-test-experience {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg3_01/03_1920x525_3.jpg");
+
+}
+#assessments-unique-as-your-students {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg3_01/03_1920x525_5.jpg");
+    h2 {
+        color: $nwea-font-graphite;
+    }
+    p {
+        color: $nwea-font-graphite;
+    }
+}
+
+#p3-engaged-students {
+    background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg3_01/03_1920x525_7.jpg");
+}
+.cp-centered {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .cp-centered-copy{
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        padding: 6.25rem 0rem 6.25rem;
+        h2 {
+            font-size: $section-heading-size;
+            font-family: gotham;
+            color: #ffffff;
+        }
+        p {
+            font-size: $section-body-size;
+            font-family: gotham-book;
+            color: #ffffff;
+        }
+    }
+}
+
+// 4. Two column content
+// 4A. Image left
+
+#instructional-connections-img {
+    img {
+        width: 30rem;
+    }
+}
+
+#instructional-connections-copy {
+    margin-top: 12.5rem;
+}
+
+#p3-test-my-class {
+    img {
+        width: 35rem;
+        box-shadow: 3px 4px 5px 0 rgb(65 65 66 / 20%);
+        border: .5px solid $nwea-graphite;
+    }
+}
+
+.cp-two-column {
+    width: 100%;
+    .container {
+        padding: 6.25rem 0rem 6.25rem;
+    }
+
+    .row2 {
+        padding-top: 6.25rem;
+    }
+
+    .cp-two-column-image-left {
+        padding-right: 6.25rem;
+        img{
+            min-width: 9.375rem;
+            width: 15.625rem;
+            height: auto;
+            margin: auto;
+            display: block;
+        }
+    }
+    .cp-two-column-copy-right {
+        padding-top: 1.56rem;
+        h2 {
+            font-size: $section-heading-size;
+        }
+        p {
+            font-size: $section-body-size;
+            padding-top: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .cp-two-column-copy-right {
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+// 4B. Image right
+
+#reveal-math-logo {
+    img {
+        width: 25rem;
+    }
+}
+
+#map-growth-gif {
+    img {
+        width: 30rem;
+    }
+}
+
+#map-accelerator-copy {
+    margin-top: 16rem;
+}
+
+#p3-student-login {
+    img {
+        width: 30rem;
+        box-shadow: 3px 4px 5px 0 rgb(65 65 66 / 20%);
+        border: .5px solid $nwea-graphite;
+    }
+}
+
+
+.cp-two-column-image-right {
+    img{
+        min-width: 9.375rem;
+        width: 15.625rem;
+        height: auto;
+        margin: auto;
+        display: block;
+        position: relative;
+    }
+}
+
+.cp-two-column-copy-left {
+    padding-top: 1.56rem;
+    h2 {
+        font-size: $section-heading-size;
+    }
+    h4 {
+        font-size: $section-subheading-size;
+        margin-bottom: -10px;
+        margin-top: 15px;
+    }
+    p {
+        font-size: $section-body-size;
+        padding-top: 15px;
+    }
+}
+
+
+// 5. Featured two column content
+
+#map-growth-espanol {
+    background-color: #E5EA8D;
+}
+
+#flexible-support {
+    background-color: #BFE6EF;
+
+}
+
+#ready-whenever-you-are {
+    background-color: #00A79D;
+}
+
+#ready-whenever-you-are-copy {
+    h2 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
+}
+
+
+
+.cp-feature-two-column {
+    position: relative;
+    width: 100%;
+    .cp-feature-two-column-image-left {
+        margin-top: 5%;
+        padding-right: 6.25rem;
+        img{
+            width: 31.25rem;
+            height: auto;
+            margin: auto;
+            display: block;
+        }
+    }
+    .cp-feature-two-column-copy-right {
+        margin-top: 30%;
+        h2 {
+            font-size: $section-heading-size;
+        }
+        p {
+            font-size: $section-body-size;
+            padding-top: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .cp-feature-two-column {
+        height:fit-content;
+    }
+    
+    .cp-feature-two-column-copy-right {
+        h2 {
+            text-align: center;
+        }
+    }
+}
