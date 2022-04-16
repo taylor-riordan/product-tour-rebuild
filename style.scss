@@ -119,12 +119,14 @@ $section-body-size: 1.2rem;
                     margin-bottom: 0px !important;
                     
                 }
+
                 h4 {
                     text-align: center;
                     font-size: 1.1rem;
                     color: $nwea-font-graphite;
                     font-family: Gotham-book !important;  
                     padding-top: 15px;
+                    min-height: 4.875rem;
                 }
                 div {
                     padding-top: 40px;
@@ -140,6 +142,11 @@ $section-body-size: 1.2rem;
 @media only screen and (max-width: 575px) {
     #lp-bg-video-container {
         height: 40vh !important;
+        background-image: ("assets/Formative_learning.png");
+        video {
+            display: block;
+            display: none; 
+        }
     }
    
     #lp-bg-container-copy-container{
@@ -164,25 +171,6 @@ footer {
         width: 6.25rem;
         height: auto;
     }
-}
-
-#cp-footer {
-    color: $nwea-graphite;
-    padding: 30px 0px 0px;
-    img {
-        display: block;
-        margin: auto;
-        width: 6.25rem;
-        height: auto;
-    }
-    .cp-footer-copy {
-        p {
-            font-size: $section-heading-size;
-            color: #ffffff;
-            font-family: gotham-bold;
-            text-align: right;
-        }
-    } 
 }
 
 
@@ -291,16 +279,48 @@ footer {
 
 // 2. Carousel
 
+
+
+#carouselExampleIndicators {
+    min-height: 620px;
+}
+
+.carousel-item.active {
+    min-height: 620px; 
+}
+
+#carousel-bg-img {
+    min-height: 620px;
+    object-fit: cover;
+}
+
 .carousel-content-container {
     position: absolute;
-    bottom: 50%;
     z-index: 20;
     width: 100%;
 }
+
+.first-slide {
+    bottom: 17rem;
+    .carousel-content{
+        width: 60%;
+    }
+}
+
+.content-slides{
+    bottom: 12rem;
+}
+
+@media only screen and (max-width: 575px) {
+    .first-slide {
+        bottom: 12rem;
+    }
+}
+
 .carousel-content {
     color: $nwea-font-graphite;
     text-align: center;
-    width: 60%;
+    width: 80%;
     margin: auto;
     h2 {
         font-size: 1.5rem;
@@ -313,6 +333,60 @@ footer {
         padding-top: 15px;
     }
   }
+
+  .carousel-two-column {
+      bottom: 5rem !important;
+      .carousel-content {
+          text-align: left !important;
+      }
+  }
+
+  .carousel-content-left-copy {
+      color: #ffffff !important;
+      text-align: left !important;
+  }
+
+  .carousel-content-right-img {
+      img {
+        width: 500px;
+      }
+  }
+
+  @media only screen and (max-width: 991px) {
+      .carousel-content-right-img {
+          display: none;
+      }
+  }
+
+  @media only screen and (min-width: 992px) {
+    #carousel2-slide3-copy {
+        padding-top: 3.125rem;
+    }
+
+    #carousel2-slide4-copy {
+        padding-top: 6.25rem;
+    }
+
+    #carousel2-slide6-copy {
+        padding-top: 6.25rem;
+    }
+
+    #carousel2-slide7-copy {
+        padding-top: 9.375rem;
+    }
+
+    #carousel2-slide7-img {
+        width: 450px;
+    }
+
+    #carousel3-slide4-copy {
+        padding-top: 3.125rem;
+    }
+
+    #carousel3-slide6-copy {
+        padding-top: 3.125rem;
+    }
+}
 
 // 3. Full-width centered content
 
@@ -373,15 +447,6 @@ footer {
 // 4. Two column content
 // 4A. Image left
 
-#instructional-connections-img {
-    img {
-        width: 30rem;
-    }
-}
-
-#instructional-connections-copy {
-    margin-top: 12.5rem;
-}
 
 #p3-test-my-class {
     img {
@@ -402,7 +467,6 @@ footer {
     }
 
     .cp-two-column-image-left {
-        padding-right: 6.25rem;
         img{
             min-width: 9.375rem;
             width: 15.625rem;
@@ -412,7 +476,6 @@ footer {
         }
     }
     .cp-two-column-copy-right {
-        padding-top: 1.56rem;
         h2 {
             font-size: $section-heading-size;
         }
@@ -423,31 +486,10 @@ footer {
     }
 }
 
-@media only screen and (max-width: 575px) {
-    .cp-two-column-copy-right {
-        h2 {
-            text-align: center;
-        }
-    }
-}
 
 // 4B. Image right
 
-#reveal-math-logo {
-    img {
-        width: 25rem;
-    }
-}
 
-#map-growth-gif {
-    img {
-        width: 30rem;
-    }
-}
-
-#map-accelerator-copy {
-    margin-top: 16rem;
-}
 
 #p3-student-login {
     img {
@@ -470,7 +512,6 @@ footer {
 }
 
 .cp-two-column-copy-left {
-    padding-top: 1.56rem;
     h2 {
         font-size: $section-heading-size;
     }
@@ -483,6 +524,132 @@ footer {
         font-size: $section-body-size;
         padding-top: 15px;
     }
+}
+
+//4C. Two column content responsive
+@media only screen and (max-width: 575px) {
+    .row2 {
+        padding-top: 9.375rem;
+    }
+    .cp-two-column-copy-right {
+        padding-top: 3.125rem;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+    .cp-two-column-copy-left {
+        padding-top: 3.125rem;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    // Supporting teachers
+    #reveal-math-copy {
+        padding-top: 0rem !important;
+    }
+
+    #reveal-math-logo {
+        padding-top: 3.125rem;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .row2 {
+        padding-top: 9.375rem;
+    }
+
+    .cp-two-column-copy-right {
+        padding-top: 3.125rem;;
+    }
+    .cp-two-column-copy-left {
+        padding-top: 3.125rem;
+    }
+
+    // Informing leaders
+    #onboard-with-ease-copy {
+        padding-top: 3.125rem;
+    }
+
+    // Supporting teachers
+
+    #reveal-math-copy {
+        padding-top: 0rem !important;
+    }
+
+    #reveal-math-logo {
+        padding-top: 3.125rem;
+    }
+
+    #instructional-connections-img {
+        width: 20rem;
+    }
+
+    #instructional-connections-copy {
+        padding-top: 0rem !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .cp-two-column-image-left {
+        padding-right: 6.25rem;
+    }
+
+    // Informing leaders
+    #adaptive-design-copy {
+        padding-top: 1.25rem;
+    }
+
+    #cover-more-ggrades-copy {
+        padding-top: 3.125rem;
+    }
+
+    #supporting-access-copy {
+        padding-top: 3.125rem;
+    }
+
+    #onboard-with-ease-copy {
+        padding-top: 3.125rem;
+    }
+
+    #professional-learning-copy {
+        padding-top: 2.5rem;
+    }
+
+    // Supporting teachers
+    #reveal-math-logo {
+        img {
+            width: 25rem;
+        }
+    }
+
+    #reveal-math-copy {
+        padding-top: 1.25rem !important;
+    }
+    
+    #map-growth-gif {
+        img {
+            width: 30rem;
+        }
+    }
+    
+    #map-accelerator-copy {
+        margin-top: 8.75rem;
+    }
+    
+    #instructional-connections-copy {
+        margin-top: 6.25rem;
+    }
+
+    #instructional-connections-img {
+        img {
+            width: 30rem;
+        }
+    }
+
+
+
 }
 
 
@@ -515,9 +682,10 @@ footer {
 .cp-feature-two-column {
     position: relative;
     width: 100%;
+    .container {
+        padding: 3.125rem 0rem 3.125rem;
+    }
     .cp-feature-two-column-image-left {
-        margin-top: 5%;
-        padding-right: 6.25rem;
         img{
             width: 31.25rem;
             height: auto;
@@ -526,7 +694,6 @@ footer {
         }
     }
     .cp-feature-two-column-copy-right {
-        margin-top: 30%;
         h2 {
             font-size: $section-heading-size;
         }
@@ -543,8 +710,158 @@ footer {
     }
     
     .cp-feature-two-column-copy-right {
-        h2 {
+        text-align: center;
+        margin: auto;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .cp-feature-two-column-copy-right {
+        padding-top: 9.375rem;
+    }
+
+    .cp-feature-two-column-image-left {
+        padding-right: 6.25rem;
+    }
+}
+
+// Content page quote / next page CTA
+
+.cp-quote-next-page {
+    background-image: url(assets/collage_green_blue.png);
+    background-repeat: no-repeat;
+}
+
+.cp-quote-copy {
+    padding-top: 0rem !important;
+}
+
+.cp-quote-citation {
+    font-size: .9rem !important;
+    font-family: Gotham-Italic !important;
+}
+
+// Next content page
+.cp-next-page {
+    a {
+        padding: 1.5rem 1rem 0rem !important;
+        text-transform: uppercase;
+        display: block;
+        text-decoration: none;
+        color: $nwea-font-graphite;
+        font-family: gotham-book;
+        font-size: 2rem;
+        width: 15.625rem;
+        margin: auto;
+        .cp-next-page-link {
+            padding: 3rem;
+        }
+    }
+    a:hover {
+        font-family: gotham-bold;
+        color: $nwea-font-graphite;
+    }
+    img {
+        width: 3.125rem;
+        height: auto;
+        display: inline;
+        margin-top: -4px;
+    }
+}
+
+.cp-next-page-copy {
+    font-family: gotham-book;
+    font-size: 1.31rem;
+}
+
+@media only screen and (max-width: 766px) {
+    .cp-next-page-copy {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .cp-next-page-copy {
+        padding-left: 65px;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .cp-next-page-copy {
+        padding-left: 7.8125rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .cp-next-page-copy {
+        padding-left: 10.625rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .cp-next-page-copy {
+        padding-left: 13.4375rem;
+    }
+}
+
+
+// Content page footer
+
+     .cp-footer-button {
+        padding: 1em 2em;
+        text-align: center;
+        line-height: 1;
+        border-width: 2px;
+        border-style: solid;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0.5em 0;
+        overflow: visible;
+        text-decoration: none;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        -webkit-appearance: none;
+        font-family: 'Gotham-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-transform: none;
+        background: #2690A6;
+        color: #FFF !important;
+        border-color: #2690A6;
+    }
+
+    #cp-footer {
+        color: $nwea-graphite;
+        padding: 30px 0px 0px;
+        img {
+            display: block;
+            margin: auto;
+            width: 6.25rem;
+            height: auto;
+        }
+        .cp-footer-copy {
+            p {
+                font-size: $section-heading-size;
+                color: #ffffff;
+                font-family: gotham-bold;
+                text-align: right;
+                padding-top: 1rem;
+            }
+        } 
+    }
+
+    @media only screen and (max-width: 767px) {
+        .cp-footer-copy {
+            p {
+                text-align: center !important;
+            }
+        }
+        .cp-footer-cta {
             text-align: center;
         }
     }
-}

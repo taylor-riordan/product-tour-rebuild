@@ -17,7 +17,7 @@
                 <img src="https://www.nwea.org/content/uploads/2022/03/nwea-white-small.png">
             </div>
                 <div class="container">
-                    <nav class="navbar navbar-expand-lg fixed-top" style="position: relative;">
+                    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="position: relative;">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="/index.html">
                                 <img src="https://www.nwea.org/content/uploads/2018/01/map-growth-multigreen-large-horiz-rgb_crop.png" class="d-inline-block align-text-top">
@@ -72,16 +72,21 @@
 
         <!-- Carousel -->
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg3_01/03_1920x620_2.png" class="d-block w-100" alt="...">
-                <div class="carousel-content-container">
+                <img src="assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg3_01/03_1920x620_2.png" id="carousel-bg-img" class="d-block w-100" alt="...">
+                <div class="carousel-content-container first-slide">
                     <div class="carousel-content">
                         <h2>Powered by technology. Driven by authenticity.</h2>
                         <p>Technology-enhanced test questions and well-crafted multiple-choice items allows MAP Growth to authentically assesses your students across multiple depths of complexity.</p>
@@ -89,19 +94,94 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://cms-www-review.nwea.org/content/uploads/2022/03/test-carousel-img.png" class="d-block w-100" alt="...">
-                <div class="carousel-content-img-row row">
-                    <div class="carousel-content-img-copy col-12 col-lg-4">
-                        <h2>Make decisions with real insight</h2>
-                        <p>MAP Growth reports give administrators a clear view of student performance and growth, making it easy to identify trends, spot potential problems, and plan for improvement.</p>
-                    </div>
-                    <div class=" carousel-content-img col-12 col-lg-8">
-                        <img sr="https://iuploads.scribblecdn.net/7d3876d4-79c6-4911-b03e-c04e8e662232/global/imagelib/product_tour/growth_grade_1a_clean_chart.png?v=02142019231355">
+                <img src="assets/carousel-bg.png" id="carousel-bg-img" class="d-block w-100" alt="...">
+                <div class="carousel-content-container content-slides">
+                    <div class="carousel-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col carousel-content-left-copy">
+                                    <h2>Developmentally appropriate</h2>
+                                    <p>With audio support and simple, touch screen-compatible controls, MAP Growth recreates familiar classroom learning tasks for K – 2 students, like using the alphabet to spell a vocabulary word.</p>
+                                </div>
+                                <div class="col-6 carousel-content-right-img">
+                                    <img src="assets/product-images/item_type_audio_650.png">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://cms-www-review.nwea.org/content/uploads/2022/03/test-carousel-img.png" class="d-block w-100" alt="...">
+                <img src="assets/carousel-bg.png" id="carousel-bg-img" class="d-block w-100" alt="...">
+                <div class="carousel-content-container content-slides">
+                    <div class="carousel-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col carousel-content-left-copy">
+                                    <h2>Smart solutions to complex problems</h2>
+                                    <p>Using interactive design, MAP Growth can assess students on abstract concepts difficult to represent with multiple choice. These items also reduce successful guessing, which increases measurement precision.</p>
+                                </div>
+                                <div class="col-6 carousel-content-right-img">
+                                    <img src="assets/product-images/Item_type_Smart_solutions_crop.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/carousel-bg.png" id="carousel-bg-img" class="d-block w-100" alt="...">
+                <div class="carousel-content-container content-slides">
+                    <div class="carousel-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col carousel-content-left-copy" id="carousel3-slide4-copy">
+                                    <h2>Go deeper</h2>
+                                    <p>Pairing adaptive question sets with a single reading passage, MAP Growth mirrors how content is taught in the classroom and assesses students at a deeper level of understanding.</p>
+                                </div>
+                                <div class="col-6 carousel-content-right-img">
+                                    <img src="assets/product-images/item_type_go_deeper_650.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/carousel-bg.png" id="carousel-bg-img" class="d-block w-100" alt="...">
+                <div class="carousel-content-container content-slides">
+                    <div class="carousel-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col carousel-content-left-copy" id="carousel3-slide6-copy">
+                                    <h2>Show what they know</h2>
+                                    <p>Open response test questions require students to solve problems unaided by multiple choice options, letting students show they understand how to apply key concepts.</p>
+                                </div>
+                                <div class="col-6 carousel-content-right-img">
+                                    <img src="assets/product-images/item_type_show_what_they_know_550.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/carousel-bg.png" id="carousel-bg-img" class="d-block w-100" alt="...">
+                <div class="carousel-content-container content-slides">
+                    <div class="carousel-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col carousel-content-left-copy" id="carousel3-slide6-copy">
+                                    <h2>Matching the rigor of new standards</h2>
+                                    <p>Leveraging multi-part questions on key science concepts, MAP Growth can assess for multidimensional understanding required by the Next Generation Science Standards.</p>
+                                </div>
+                                <div class="col-6 carousel-content-right-img">
+                                    <img src="assets/product-images/item_type_multiple_step_650.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -147,15 +227,15 @@
         <div class="cp-two-column">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-6 order-md-2">
+                        <div class="cp-two-column-image-right" id="p3-student-login">
+                            <img src="assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg3_01/Student_login_screen_clean.png">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 order-md-1">
                         <div class="cp-two-column-copy-left">
                             <h2>Simple student set-up</h2>
                             <p>MAP Growth makes test login uncomplicated for students while keeping important security controls—like verifying student identity—easy to manage for proctors.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="cp-two-column-image-right" id="p3-student-login">
-                            <img src="assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg3_01/Student_login_screen_clean.png">
                         </div>
                     </div>
                 </div>
@@ -258,8 +338,50 @@
             </div>
         </div>
 
+        <!-- Two column content -->
+        <div class="cp-two-column cp-quote-next-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="cp-two-column-copy-left cp-quote-copy">
+                            <img src="assets/openquote_image_nospace.png">
+                            <p>"I want to prove to others that I can beat my goal by challenging myself. MAP Growth helps me stay on track."</p>
+                            <p class="cp-quote-citation">
+                                Melissa, 5th grade student<br />
+                                California
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="cp-next-page">
+                            <a class="cp-next-page-link" href="https://www.nwea.org/resource-center/product/map-growth">UP NEXT
+                                <img src="https://cdn.nwea.org/images/arrows/arrow-only.svg">
+                            </a>
+                            <p class="cp-next-page-copy">Visit our resource center to learn more about MAP Growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="cp-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 cp-footer-copy">
+                            <p>Ready for a closer look?</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 cp-footer-cta">
+                            <a class="cp-footer-button" href="">Schedule a consultation</a>
+                        </div>
+                    </div>
+                </div>>
+            </div>
+        </footer>
+
 
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
