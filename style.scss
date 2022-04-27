@@ -199,7 +199,7 @@ footer {
         display: block;
         text-decoration: none;
         color: $nwea-font-graphite;
-        font-family: gotham-book;
+        font-family: gotham;
         .nav-link {
             padding: 3rem;
         }
@@ -221,6 +221,14 @@ footer {
         padding: 1.5rem 1rem 1.5rem !important;
         width: 250px;
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-item {
+        a {
+            font-size: 1.3rem;
+        }
     }
 }
 
