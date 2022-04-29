@@ -656,6 +656,7 @@ footer {
     text-align: center;
     width: 800px;
     margin: auto;
+    padding-top: 0px !important;
   }
 
   #instructional-connections-img img {
