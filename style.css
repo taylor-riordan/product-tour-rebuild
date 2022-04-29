@@ -94,7 +94,7 @@
 
 #lp-bg-video-container {
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
   min-height: 500px;
   position: relative;
 }
@@ -170,9 +170,6 @@
   padding-top: 15px;
   min-height: 4.875rem;
 }
-#lp-inner-content-wrapper div {
-  padding-top: 40px;
-}
 #lp-inner-content-wrapper div img {
   width: 50px;
   height: auto;
@@ -229,14 +226,16 @@ footer {
   display: block;
   text-decoration: none;
   color: #414142;
-  font-family: gotham-book;
+  font-family: gotham;
 }
 .nav-item a .nav-link {
   padding: 3rem;
 }
 .nav-item a:hover {
+  color: #217b8e !important;
+}
+.nav-item a:active {
   font-family: gotham-bold;
-  color: #414142;
 }
 .nav-item img {
   width: 30px;
@@ -251,6 +250,11 @@ footer {
   height: auto;
 }
 
+@media only screen and (max-width: 992px) {
+  .nav-item a {
+    font-size: 1.3rem;
+  }
+}
 #informing-leaders-hero {
   background-image: url("assets/KAP8582 MG product tour imgs MAR22_D01/Exports_pg1_01/01_1920x525_1.jpg");
 }
@@ -298,6 +302,18 @@ footer {
     margin: auto;
   }
 }
+.carousel-control-prev {
+  z-index: 21 !important;
+}
+
+.carousel-control-next {
+  z-index: 21 !important;
+}
+
+.slider-content-padding {
+  bottom: 10rem !important;
+}
+
 #carouselExampleIndicators {
   min-height: 620px;
 }
@@ -325,7 +341,7 @@ footer {
 }
 
 .content-slides {
-  bottom: 12rem;
+  bottom: 5rem;
 }
 
 @media only screen and (max-width: 575px) {
@@ -362,7 +378,7 @@ footer {
 }
 
 .carousel-content-right-img img {
-  width: 500px;
+  width: 700px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -379,8 +395,16 @@ footer {
     padding-top: 6.25rem;
   }
 
+  #carousel2-slide4-img {
+    width: 575px !important;
+  }
+
   #carousel2-slide6-copy {
     padding-top: 6.25rem;
+  }
+
+  #carousel2-slide6-img img {
+    width: 575px !important;
   }
 
   #carousel2-slide7-copy {
@@ -397,6 +421,10 @@ footer {
 
   #carousel3-slide6-copy {
     padding-top: 3.125rem;
+  }
+
+  #carousel3-slide6-img img {
+    width: 650px;
   }
 }
 #reach-more-students {
@@ -537,8 +565,10 @@ footer {
     padding-top: 0rem !important;
   }
 
-  #reveal-math-logo {
-    padding-top: 3.125rem;
+  #instructional-connections-img img {
+    width: 300px;
+    display: block;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -566,12 +596,16 @@ footer {
     padding-top: 3.125rem;
   }
 
-  #instructional-connections-img {
-    width: 20rem;
+  #instructional-connections-copy {
+    text-align: center;
+    width: 800px;
+    margin: auto;
   }
 
-  #instructional-connections-copy {
-    padding-top: 0rem !important;
+  #instructional-connections-img img {
+    width: 800px;
+    display: block;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -599,6 +633,9 @@ footer {
     padding-top: 2.5rem;
   }
 
+  #reveal-math-logo {
+    padding-top: 0px;
+  }
   #reveal-math-logo img {
     width: 25rem;
   }
@@ -616,11 +653,13 @@ footer {
   }
 
   #instructional-connections-copy {
-    margin-top: 6.25rem;
+    text-align: center;
+    width: 800px;
+    margin: auto;
   }
 
   #instructional-connections-img img {
-    width: 30rem;
+    width: 800px;
   }
 }
 #map-growth-espanol {
@@ -684,8 +723,9 @@ footer {
   }
 }
 .cp-quote-next-page {
-  background-image: url(assets/collage_green_blue.png);
+  background-image: url("assets/KAP8582-MAP-Growth-product-tour-Image-D03/growth-semi-transparent_700x700.png");
   background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .cp-quote-copy {

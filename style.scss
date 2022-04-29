@@ -129,7 +129,6 @@ $section-body-size: 1.2rem;
                     min-height: 4.875rem;
                 }
                 div {
-                    padding-top: 40px;
                     img {
                         width: 50px;
                         height: auto;
@@ -205,9 +204,13 @@ footer {
         }
     }
     a:hover {
-        font-family: gotham-bold;
-        color: $nwea-font-graphite;
+        color: #217b8e !important;
     }
+
+    a:active {
+        font-family: gotham-bold;
+    }
+
     img {
         width: 30px;
         height: auto;
@@ -287,6 +290,17 @@ footer {
 
 // 2. Carousel
 
+.carousel-control-prev {
+    z-index: 21 !important;
+}
+
+.carousel-control-next {
+    z-index: 21 !important;
+}
+
+.slider-content-padding {
+    bottom: 10rem !important;
+}
 
 
 #carouselExampleIndicators {
@@ -316,7 +330,7 @@ footer {
 }
 
 .content-slides{
-    bottom: 12rem;
+    bottom: 5rem;
 }
 
 @media only screen and (max-width: 575px) {
@@ -356,7 +370,7 @@ footer {
 
   .carousel-content-right-img {
       img {
-        width: 500px;
+        width: 700px;
       }
   }
 
@@ -375,8 +389,16 @@ footer {
         padding-top: 6.25rem;
     }
 
+    #carousel2-slide4-img {
+        width: 575px !important;
+    }
+
     #carousel2-slide6-copy {
         padding-top: 6.25rem;
+    }
+
+    #carousel2-slide6-img img {
+        width: 575px !important;
     }
 
     #carousel2-slide7-copy {
@@ -393,6 +415,10 @@ footer {
 
     #carousel3-slide6-copy {
         padding-top: 3.125rem;
+    }
+
+    #carousel3-slide6-img img {
+        width: 650px;
     }
 }
 
@@ -557,9 +583,14 @@ footer {
         padding-top: 0rem !important;
     }
 
-    #reveal-math-logo {
-        padding-top: 3.125rem;
+    #instructional-connections-img {
+        img {
+            width: 300px;
+            display: block;
+            margin: auto;
+        }
     }
+
 }
 
 @media only screen and (min-width: 576px) {
@@ -589,12 +620,19 @@ footer {
         padding-top: 3.125rem;
     }
 
-    #instructional-connections-img {
-        width: 20rem;
-    }
 
     #instructional-connections-copy {
-        padding-top: 0rem !important;
+        text-align: center;
+        width: 800px;
+        margin: auto;
+    }
+
+    #instructional-connections-img {
+        img {
+            width: 800px;
+            display: block;
+            margin: auto;
+        }
     }
 }
 
@@ -627,6 +665,7 @@ footer {
 
     // Supporting teachers
     #reveal-math-logo {
+        padding-top: 0px;
         img {
             width: 25rem;
         }
@@ -647,12 +686,14 @@ footer {
     }
     
     #instructional-connections-copy {
-        margin-top: 6.25rem;
+        text-align: center;
+        width: 800px;
+        margin: auto;
     }
 
     #instructional-connections-img {
         img {
-            width: 30rem;
+            width: 800px;
         }
     }
 
@@ -737,8 +778,9 @@ footer {
 // Content page quote / next page CTA
 
 .cp-quote-next-page {
-    background-image: url(assets/collage_green_blue.png);
+    background-image: url("assets/KAP8582-MAP-Growth-product-tour-Image-D03/growth-semi-transparent_700x700.png");
     background-repeat: no-repeat;
+    background-position: left top;
 }
 
 .cp-quote-copy {
