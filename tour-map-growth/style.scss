@@ -938,6 +938,14 @@ footer {
         & {
             width: 75% !important;
             margin: auto;
+            padding: 0
+        }
+        input{
+            &[type="email"],
+            &[type="text"] {
+                -webkit-appearance: none;
+                border-radius: 0;
+            }
         }
         .mktoField, label, .mktoButton  {
             font-size: 1.2em !important;
