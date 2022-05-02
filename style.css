@@ -68,6 +68,14 @@
   font-weight: 400;
   font-style: normal;
 }
+body {
+  font-family: gotham-book;
+}
+
+h1, h2, h3 {
+  font-family: gotham-bold;
+}
+
 #lp-header-logo {
   padding: 20px 0px 20px;
 }
@@ -854,7 +862,7 @@ footer {
 .modal-body .mktoForm .mktoField, .modal-body .mktoForm label, .modal-body .mktoForm .mktoButton {
   font-size: 1.2em !important;
 }
-.modal-body .mktoForm .mktoAsterix, .modal-body .mktoForm .mktoOffset, .modal-body .mktoForm .mktoGutter {
+.modal-body .mktoForm .mktoAsterix, .modal-body .mktoForm .mktoGutter {
   display: none !important;
 }
 .modal-body .mktoForm .mktoFormRow {

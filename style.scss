@@ -24,6 +24,15 @@ $section-body-size: 1.2rem;
     font-size: 16px;
 }
 
+// Typography
+body {
+    font-family: gotham-book;
+}
+
+h1, h2, h3 {
+    font-family: gotham-bold;
+}
+
 // 1. Landing page ("lp" for classes and id's)
 #lp-header-logo {
     padding: 20px 0px 20px;
@@ -929,7 +938,7 @@ footer {
         .mktoField, label, .mktoButton  {
             font-size: 1.2em !important;
         }
-        .mktoAsterix, .mktoOffset, .mktoGutter {
+        .mktoAsterix, .mktoGutter {
             display: none !important;
         }
         .mktoFormRow {
