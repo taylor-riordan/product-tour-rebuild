@@ -24,6 +24,15 @@ $section-body-size: 1.2rem;
     font-size: 16px;
 }
 
+// Typography
+body {
+    font-family: gotham-book;
+}
+
+h1, h2, h3 {
+    font-family: gotham-bold;
+}
+
 // 1. Landing page ("lp" for classes and id's)
 #lp-header-logo {
     padding: 20px 0px 20px;
@@ -129,7 +138,6 @@ $section-body-size: 1.2rem;
                     min-height: 4.875rem;
                 }
                 div {
-                    padding-top: 40px;
                     img {
                         width: 50px;
                         height: auto;
@@ -205,9 +213,13 @@ footer {
         }
     }
     a:hover {
-        font-family: gotham-bold;
-        color: $nwea-font-graphite;
+        color: #217b8e !important;
     }
+
+    a:active {
+        font-family: gotham-bold;
+    }
+
     img {
         width: 30px;
         height: auto;
@@ -287,6 +299,17 @@ footer {
 
 // 2. Carousel
 
+.carousel-control-prev {
+    z-index: 21 !important;
+}
+
+.carousel-control-next {
+    z-index: 21 !important;
+}
+
+.slider-content-padding {
+    bottom: 10rem !important;
+}
 
 
 #carouselExampleIndicators {
@@ -316,7 +339,7 @@ footer {
 }
 
 .content-slides{
-    bottom: 12rem;
+    bottom: 5rem;
 }
 
 @media only screen and (max-width: 575px) {
@@ -356,7 +379,7 @@ footer {
 
   .carousel-content-right-img {
       img {
-        width: 500px;
+        width: 700px;
       }
   }
 
@@ -375,8 +398,16 @@ footer {
         padding-top: 6.25rem;
     }
 
+    #carousel2-slide4-img {
+        width: 575px !important;
+    }
+
     #carousel2-slide6-copy {
         padding-top: 6.25rem;
+    }
+
+    #carousel2-slide6-img img {
+        width: 575px !important;
     }
 
     #carousel2-slide7-copy {
@@ -393,6 +424,10 @@ footer {
 
     #carousel3-slide6-copy {
         padding-top: 3.125rem;
+    }
+
+    #carousel3-slide6-img img {
+        width: 650px;
     }
 }
 
@@ -557,9 +592,14 @@ footer {
         padding-top: 0rem !important;
     }
 
-    #reveal-math-logo {
-        padding-top: 3.125rem;
+    #instructional-connections-img {
+        img {
+            width: 300px;
+            display: block;
+            margin: auto;
+        }
     }
+
 }
 
 @media only screen and (min-width: 576px) {
@@ -589,12 +629,19 @@ footer {
         padding-top: 3.125rem;
     }
 
-    #instructional-connections-img {
-        width: 20rem;
-    }
 
     #instructional-connections-copy {
-        padding-top: 0rem !important;
+        text-align: center;
+        width: 800px;
+        margin: auto;
+    }
+
+    #instructional-connections-img {
+        img {
+            width: 800px;
+            display: block;
+            margin: auto;
+        }
     }
 }
 
@@ -627,6 +674,7 @@ footer {
 
     // Supporting teachers
     #reveal-math-logo {
+        padding-top: 0px;
         img {
             width: 25rem;
         }
@@ -647,12 +695,15 @@ footer {
     }
     
     #instructional-connections-copy {
-        margin-top: 6.25rem;
+        text-align: center;
+        width: 800px;
+        margin: auto;
+        padding-top: 0px !important;
     }
 
     #instructional-connections-img {
         img {
-            width: 30rem;
+            width: 800px;
         }
     }
 
@@ -737,8 +788,9 @@ footer {
 // Content page quote / next page CTA
 
 .cp-quote-next-page {
-    background-image: url(assets/collage_green_blue.png);
+    background-image: url("assets/KAP8582-MAP-Growth-product-tour-Image-D03/growth-semi-transparent_700x700.png");
     background-repeat: no-repeat;
+    background-position: left top;
 }
 
 .cp-quote-copy {
@@ -873,3 +925,74 @@ footer {
             text-align: center;
         }
     }
+
+// Modal
+
+// Marketo form-specific styles
+.modal-body {
+    .mktoForm {
+        & {
+            width: 75% !important;
+            margin: auto;
+        }
+        .mktoField, label, .mktoButton  {
+            font-size: 1.2em !important;
+        }
+        .mktoAsterix, .mktoGutter {
+            display: none !important;
+        }
+        .mktoFormRow {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .mktoFieldDescriptor {
+            width: 100% !important;;
+        }
+        .mktoLabel {
+            font-family: Gotham-Bold !important;
+        }
+        
+        .mktoHasWidth, .mktoFieldWrap {
+            // max-width: 100% !important;
+            width: 100% !important;
+        }
+        input, textarea {
+            border: 1px solid #414142;
+            padding: .5em !important;
+        }
+        input, select, textarea, label {
+            display: block !important;
+            float: none !important;
+            width: auto !important;
+            max-width: 100%;
+        }
+        input[type="checkbox"] {
+            // position: absolute;
+            float: left !important;
+            margin-top: 0.2em;
+            // vertical-align: middle;
+            // display: inline-block !important;
+            
+        }
+        select.mktoField {
+            float: none;
+            display: block;
+        }
+        
+        .mktoButtonWrap {
+            margin-left: 0 !important;
+        }
+        .mktoButtonRow {
+            display: block;
+            text-align: center;
+        }
+        .mktoButton {
+            text-transform: uppercase;
+            color: #414142 !important;
+            background-image: none !important;
+            border: none !important;
+            background-color: #FFC00E !important;
+        }
+    }
+}
