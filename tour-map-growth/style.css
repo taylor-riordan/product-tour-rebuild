@@ -68,6 +68,14 @@
   font-weight: 400;
   font-style: normal;
 }
+body {
+  font-family: gotham-book;
+}
+
+h1, h2, h3 {
+  font-family: gotham-bold;
+}
+
 #lp-header-logo {
   padding: 20px 0px 20px;
 }
@@ -846,6 +854,78 @@ footer {
   .cp-footer-cta {
     text-align: center;
   }
+}
+.form-gate-container {
+  border-top: 22px solid #fec10d;
+}
+
+#form-gate .mktoForm {
+  width: 75% !important;
+  margin: auto;
+}
+#form-gate .mktoForm .mktoField, #form-gate .mktoForm label, #form-gate .mktoForm .mktoButton {
+  font-size: 1.2em !important;
+}
+#form-gate .mktoForm .mktoAsterix, #form-gate .mktoForm .mktoGutter {
+  display: none !important;
+}
+#form-gate .mktoForm .mktoFormRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#form-gate .mktoForm .mktoFieldDescriptor {
+  width: 100% !important;
+}
+#form-gate .mktoForm .mktoLabel {
+  font-family: Gotham-Bold !important;
+}
+#form-gate .mktoForm .mktoHasWidth, #form-gate .mktoForm .mktoFieldWrap {
+  width: 100% !important;
+}
+#form-gate .mktoForm input, #form-gate .mktoForm textarea {
+  border: 1px solid #414142;
+  padding: 0.5em !important;
+}
+#form-gate .mktoForm input, #form-gate .mktoForm select, #form-gate .mktoForm textarea, #form-gate .mktoForm label {
+  display: block !important;
+  float: none !important;
+  width: auto !important;
+  max-width: 100%;
+}
+#form-gate .mktoForm input[type=checkbox] {
+  float: left !important;
+  margin-top: 0.2em;
+}
+#form-gate .mktoForm select.mktoField {
+  float: none;
+  display: block;
+}
+#form-gate .mktoForm .mktoButtonWrap {
+  margin-left: 0 !important;
+}
+#form-gate .mktoForm .mktoButtonRow {
+  display: block;
+  text-align: center;
+}
+#form-gate .mktoForm .mktoButton {
+  text-transform: uppercase;
+  color: #414142 !important;
+  background-image: none !important;
+  border: none !important;
+  background-color: #FFC00E !important;
+  width: 100%;
+}
+#form-gate .mktoForm .mktoErrorArrow {
+  background-color: #ED0677;
+  border: 1px solid #ED0677;
+}
+#form-gate .mktoForm .mktoErrorMsg {
+  background: white;
+  background-image: none;
+  color: #ED0677;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,6 +24,15 @@ $section-body-size: 1.2rem;
     font-size: 16px;
 }
 
+// Typography
+body {
+    font-family: gotham-book;
+}
+
+h1, h2, h3 {
+    font-family: gotham-bold;
+}
+
 // 1. Landing page ("lp" for classes and id's)
 #lp-header-logo {
     padding: 20px 0px 20px;
@@ -916,3 +925,90 @@ footer {
             text-align: center;
         }
     }
+
+// Form gate
+
+.form-gate-container {
+    border-top: 22px solid #fec10d;
+}
+
+// Marketo form-specific styles
+#form-gate {
+    .mktoForm {
+        & {
+            width: 75% !important;
+            margin: auto;
+        }
+        .mktoField, label, .mktoButton  {
+            font-size: 1.2em !important;
+        }
+        .mktoAsterix, .mktoGutter {
+            display: none !important;
+        }
+        .mktoFormRow {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .mktoFieldDescriptor {
+            width: 100% !important;;
+        }
+        .mktoLabel {
+            font-family: Gotham-Bold !important;
+        }
+        
+        .mktoHasWidth, .mktoFieldWrap {
+            // max-width: 100% !important;
+            width: 100% !important;
+        }
+        input, textarea {
+            border: 1px solid #414142;
+            padding: .5em !important;
+        }
+        input, select, textarea, label {
+            display: block !important;
+            float: none !important;
+            width: auto !important;
+            max-width: 100%;
+        }
+        input[type="checkbox"] {
+            // position: absolute;
+            float: left !important;
+            margin-top: 0.2em;
+            // vertical-align: middle;
+            // display: inline-block !important;
+            
+        }
+        select.mktoField {
+            float: none;
+            display: block;
+        }
+        
+        .mktoButtonWrap {
+            margin-left: 0 !important;
+        }
+        .mktoButtonRow {
+            display: block;
+            text-align: center;
+        }
+        .mktoButton {
+            text-transform: uppercase;
+            color: #414142 !important;
+            background-image: none !important;
+            border: none !important;
+            background-color: #FFC00E !important;
+            width: 100%;
+        }
+        .mktoErrorArrow {
+            background-color: #ED0677;
+            border: 1px solid #ED0677;
+        }
+        .mktoErrorMsg {
+            background: white;
+            background-image: none;
+            color: #ED0677;
+            text-shadow: none;
+            box-shadow: none;
+        }
+    }
+}
