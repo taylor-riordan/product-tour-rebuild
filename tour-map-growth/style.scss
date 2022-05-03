@@ -62,12 +62,16 @@ h1, h2, h3 {
     height: 60vh;
     min-height: 500px;
     position: relative;
-        video {
+    overflow: hidden;
+        video, > iframe {
             width: 100%;
-            height: 100%;
+            height: 30%; /* Given a 10:3 aspect ratio, 3/10*100 = 30% */
+            min-height: 100vh;
+            min-width: 333.33vh; /* Given a 10:3 aspect ratio, 10/3*100 = 333.33 */
             position: absolute;
-            object-fit: cover;
-            z-index: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
           
         }
 }
@@ -1020,3 +1024,25 @@ footer {
         }
     }
 }
+
+// Vimeo video
+.vimeo-wrapper {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // z-index: -1;
+    // pointer-events: none;
+    // overflow: hidden;
+ }
+ .vimeo-wrapper iframe {
+    width: 100%;
+    height: 56.25%; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    // min-height: 100vh;
+    // min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+ }
