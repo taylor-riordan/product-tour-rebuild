@@ -31,15 +31,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="https://www.nwea.org/content/uploads/2018/01/map-growth-multigreen-large-horiz-rgb_crop.png" alt="MAP Growth">
             </div>
         </div>
-        <div id="lp-container" class="text-center bg-secondary p-5" style="background-image: url(./assets/Formative_learning.png); background-size: cover; background-position: center;" >
+        <div id="lp-container" class="text-center bg-secondary p-5" style="background-image: url(./assets/Formative_learning.png); background-size: 161.8% auto; ; background-position: top; background-repeat: no-repeat;" >
             
-            <div class="col col-md-4 mx-auto d-inline-block bg-white shadow-sm p-4 text-center form-gate-container">
+            <div class="col col-md-4 mx-auto bg-white shadow-sm p-4 text-center form-gate-container">
                 <h2 style="font-size: 1.6rem ">Enter your email to get started</h2>
                 <div class="text-center" id="form-gate">
                     <div class="modal-body p-4">
                         <script src="https://info.nwea.org/js/forms2/js/forms2.min.js"></script>
-                        <form id="mktoForm_3783"></form>
-                        <script>MktoForms2.loadForm("https://info.nwea.org", "976-IYI-694", 3783);</script>
+                        <form id="mktoForm_3808"></form>
+                        <script>MktoForms2.loadForm("https://info.nwea.org", "976-IYI-694", 3808);</script>
                     </div>
                   </div>
             </div>
@@ -55,9 +55,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- JS & CSS library of MultiSelect plugin -->
-    <script src="multiselect/jquery.multiselect.js"></script>
 
     <script defer>
         function elementReady(selector) {
@@ -84,6 +81,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         elementReady('.mktoForm').then(( mktoForm )=>{
             document.getElementById('lp-container').classList.remove('invisible')
         });
+    </script>
+    <script type="text/javascript" src="./bs-multiselect/js/bootstrap-multiselect.min.js"></script>
+    <link rel="stylesheet" href="./bs-multiselect/css/bootstrap-multiselect.min.css" type="text/css"/>
+    <script type="text/javascript">
+        $('body').on( 'change', '.mktoForm select', function(){
+            $('.mktoForm select[multiple="multiple"]').multiselect({
+            templates: {
+                button: '<button type="button" class="multiselect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span class="multiselect-selected-text"></span></button>'
+            },
+            nonSelectedText: 'Select all that apply...'
+        })});
     </script>
 </body>
 </html>

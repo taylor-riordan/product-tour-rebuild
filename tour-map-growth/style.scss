@@ -951,7 +951,7 @@ footer {
                 border-radius: 0;
             }
         }
-        .mktoField, label, .mktoButton  {
+        .mktoField, .mktoButton  {
             font-size: 1.2em !important;
         }
         .mktoAsterix, .mktoGutter {
@@ -964,6 +964,9 @@ footer {
         }
         .mktoFieldDescriptor {
             width: 100% !important;;
+        }
+        label {
+            font-family: Gotham-Book
         }
         .mktoLabel {
             font-family: Gotham-Bold !important;
@@ -1021,6 +1024,21 @@ footer {
             color: #ED0677;
             text-shadow: none;
             box-shadow: none;
+        }
+
+        // Multiselect rules
+        .multiselect-native-select {
+            .btn-group {
+                width: 100%;
+                button.dropdown-toggle {
+                    width: 100%;
+                    border: 1px solid black;
+                    background: white;
+                    span {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }
