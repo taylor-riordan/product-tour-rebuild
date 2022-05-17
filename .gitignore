@@ -2,3 +2,8 @@
 # style.css
 # style.css.map
 assets/product-images.zip
+
+node_modules
+*.csv
+package.json
+package-lock.json
