@@ -33,7 +33,11 @@ h1, h2, h3 {
     font-family: gotham-bold;
 }
 
-// 1. Landing page ("lp" for classes and id's)
+h1, h2, h3, p {
+    color: $nwea-font-graphite;
+}
+
+// Landing page
 #lp-header-logo {
     padding: 20px 0px 20px;
     h1 {
@@ -51,7 +55,7 @@ h1, h2, h3 {
     }
 }
 
-//  1A. Landing page content
+//  Landing page content
 #lp-bg-container {
     width: 100vw;
     position: relative;
@@ -186,13 +190,9 @@ footer {
 }
 
 
+// Content page header
 
-
-// 2. Informing leaders page ("il" for classes and id's)
-
-// 2A. Informing leaders header
-
-#il-header-logo {
+#cp-header-logo {
     background-color: $nwea-graphite;
     color: $nwea-graphite;
     padding: 30px 0px 30px;
@@ -837,6 +837,15 @@ footer {
 .cp-next-page-copy {
     font-family: gotham-book;
     font-size: 1.31rem;
+}
+
+#engaging-students-rc-cta-copy {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#engaging-students-rc-cta {
+    padding-top: 0rem !important;
 }
 
 @media only screen and (max-width: 766px) {
